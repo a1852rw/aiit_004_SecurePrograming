@@ -6,7 +6,7 @@ int main(void)
 {
     char buf[16];
 
-    puts( "‰½‚©“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B" );
+    puts( "Please, enter your name\n" );
     gets_s( buf, sizeof(buf) );
     puts( buf );
 
