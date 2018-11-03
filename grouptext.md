@@ -25,5 +25,24 @@
   - https://www.ipa.go.jp/security/awareness/vendor/programmingv2/contents/c910.html
   - このサイトの内容をまとめ、さらに関数の実際の動作を確認して発表する
 
+## 関数の対応
+- 参考サイトから抜粋
+    - C11の仕様－脆弱性対応に関連する機能強化点
+    - https://www.buildinsider.net/language/clang/02
+- C99とC11における関数の対応
+- gets関数
+    - gets_s関数
+- getenv関数
+    - getenv_s関数
+- moment関数
+    - moment_s関数
+- tmpnam関数
+    - tmpnam_s関数
+    - tmpfile_s関数
+- printf関数
+    - printf_S関数
+
+
 ## 参考サイト
-- 
+- C11の仕様－脆弱性対応に関連する機能強化点
+    - https://www.buildinsider.net/language/clang/02
