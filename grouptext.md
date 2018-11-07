@@ -53,3 +53,5 @@
 ## 参考サイト
 - C11の仕様－脆弱性対応に関連する機能強化点
     - https://www.buildinsider.net/language/clang/02
+- Overview of various libc's regarding the secure C11 extensions
+    - https://rurban.github.io/safeclib/doc/safec-3.3/d1/dae/md_doc_libc-overview.html
