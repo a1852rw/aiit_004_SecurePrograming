@@ -37,16 +37,16 @@
     - C11の仕様－脆弱性対応に関連する機能強化点
     - https://www.buildinsider.net/language/clang/02
 - C99とC11における関数の対応
-- gets関数
+- gets関数 (W)
     - gets_s関数
-- getenv関数
+- getenv関数 (F)
     - getenv_s関数
 - moment関数
     - moment_s関数
 - tmpnam関数
     - tmpnam_s関数
     - tmpfile_s関数
-- printf関数
+- printf関数 (K)
     - printf_s関数
 
 ## C11で追加された関数のリスト
@@ -54,87 +54,94 @@ abort_handler_s
 asctime_s
 bsearch_s
 ctime_s
-fopen_s.c
-fprintf_s.c
-freopen_s.c
-fscanf_s.c
-fwprintf_s.c
-fwscanf_s.c
-getenv_s.c
-gets_s.c
-gmtime_s.c
-hangul.h
-ignore_handler_s.c
-localtime_s.c
-mbsrtowcs_s.c
-mbstowcs_s.c
-mem_primitives_lib.c
-mem_primitives_lib.h
-memccpy_s.c
-memchr_s.c
-memcmp16_s.c
-memcmp32_s.c
-memcmp_s.c
-memcpy16_s.c
-memcpy32_s.c
-memcpy_s.c
-memmove16_s.c
-memmove32_s.c
-memmove_s.c
-memrchr_s.c
-memset16_s.c
-memset32_s.c
-memset_s.c
-memzero16_s.c
-memzero32_s.c
-memzero_s.c
-printf_s.c
-qsort_s.c
-safe_compile.h
-safe_config.h
-safe_lib.h
+fopen_s
+fprintf_s
+freopen_s
+fscanf_s
+fwprintf_s
+
+fwscanf_s
+
+getenv_s
+
+gets_s
+
+gmtime_s
+
+hangul
+
+ignore_handler_s
+
+localtime_s
+
+mbsrtowcs_s
+
+mbstowcs_s
+
+mem_primitives_lib
+memccpy_s
+memchr_s
+memcmp16_s
+memcmp32_s
+memcmp_s
+memcpy16_s
+memcpy32_s
+memcpy_s
+memmove16_s
+memmove32_s
+memmove_s
+memrchr_s
+memset16_s
+memset32_s
+memset_s
+memzero16_s
+memzero32_s
+memzero_s
+printf_s
+qsort_s
+safe_compile
+safe_config
+safe_lib
 safe_lib_errno.h
-safe_mem_constraint.c
-safe_mem_constraint.h
-safe_mem_lib.h
-safe_str_constraint.c
-safe_str_constraint.h
-safe_str_lib.h
-safe_types.h
-scanf_s.c
-slkm_init.c
-snprintf_s.c
-snwprintf_s.c
-sprintf_s.c
-sscanf_s.c
-strcasecmp_s.c
-strcasestr_s.c
-strcat_s.c
-strchr_s.c
-strcmp_s.c
-strcmpfld_s.c
-strcoll_s.c
-strcpy_s.c
-strcpyfld_s.c
+safe_mem_constraint
+safe_mem_lib
+safe_str_constraint
+safe_str_constraint
+safe_str_lib
+safe_types
+scanf_s
+slkm_init
+snprintf_s
+snwprintf_s
+sprintf_s
+sscanf_s
+strcasecmp_s
+strcasestr_s
+strcat_s
+strchr_s
+strcmp_s
+strcmpfld_s
+strcoll_s
+strcpy_s
+strcpyfld_s
 strcpyfldin_s.c
 strcpyfldout_s.c
-strcspn_s.c
-strerror_s.c
-strerror_s.h
-strfirstchar_s.c
-strfirstdiff_s.c
-strfirstsame_s.c
-strisalphanumeric_s.c
-strisascii_s.c	
-strisdigit_s.c	
-strishex_s.c	
-strislowercase_s.c	
-strismixedcase_s.c	
-strispassword_s.c	
-strisuppercase_s.c	
-strlastchar_s.c	
-strlastdiff_s.c	
-strlastsame_s.c	
+strcspn_s
+strerror_s
+strfirstchar_s
+strfirstdiff_s
+strfirstsame_s
+strisalphanumeric_s
+strisascii_s
+strisdigit_s
+strishex_s
+strislowercase_s
+strismixedcase_s
+strispassword_s
+strisuppercase_s
+strlastchar_s
+strlastdiff_s
+strlastsame_s
 strljustify_s.c	
 strnatcmp_s.c	
 strncat_s.c	
