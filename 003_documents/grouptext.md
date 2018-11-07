@@ -216,4 +216,5 @@ wscanf_s
     - https://www.buildinsider.net/language/clang/02
 - Overview of various libc's regarding the secure C11 extensions
     - https://rurban.github.io/safeclib/doc/safec-3.3/d1/dae/md_doc_libc-overview.html
-- 
+- safec fork with all C11 Annex K functions 
+    - https://github.com/rurban/safeclib
