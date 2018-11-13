@@ -49,6 +49,16 @@
 - printf関数 (K)
     - printf_s関数
 
+### getenv_S関数の説明
+- 担当：F
+
+### gets_s関数の説明
+- 担当：W
+
+### printf_s関数の説明
+- 担当：K
+
+
 ## C11で追加された関数のリスト
 - abort_handler_s
 - asctime_s
@@ -95,7 +105,6 @@
 - safe_lib_errno
 - safe_mem_constraint
 - safe_mem_lib
-- safe_str_constraint
 - safe_str_constraint
 - safe_str_lib
 - safe_types
