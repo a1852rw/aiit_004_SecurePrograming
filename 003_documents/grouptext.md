@@ -49,167 +49,176 @@
 - printf関数 (K)
     - printf_s関数
 
+### getenv_S関数の説明
+- 担当：F
+
+### gets_s関数の説明
+- 担当：W
+
+### printf_s関数の説明
+- 担当：K
+
+
 ## C11で追加された関数のリスト
-abort_handler_s
-asctime_s
-bsearch_s
-ctime_s
-fopen_s
-fprintf_s
-freopen_s
-fscanf_s
-fwprintf_s
-fwscanf_s
-getenv_s
-gets_s
-gmtime_s
-hangul
-ignore_handler_s
-localtime_s
-mbsrtowcs_s
-mbstowcs_s
-mem_primitives_lib
-memccpy_s
-memchr_s
-memcmp16_s
-memcmp32_s
-memcmp_s
-memcpy16_s
-memcpy32_s
-memcpy_s
-memmove16_s
-memmove32_s
-memmove_s
-memrchr_s
-memset16_s
-memset32_s
-memset_s
-memzero16_s
-memzero32_s
-memzero_s
-printf_s
-qsort_s
-safe_compile
-safe_config
-safe_lib
-safe_lib_errno
-safe_mem_constraint
-safe_mem_lib
-safe_str_constraint
-safe_str_constraint
-safe_str_lib
-safe_types
-scanf_s
-slkm_init
-snprintf_s
-snwprintf_s
-sprintf_s
-sscanf_s
-strcasecmp_s
-strcasestr_s
-strcat_s
-strchr_s
-strcmp_s
-strcmpfld_s
-strcoll_s
-strcpy_s
-strcpyfld_s
-strcpyfldin_s.c
-strcpyfldout_s.c
-strcspn_s
-strerror_s
-strfirstchar_s
-strfirstdiff_s
-strfirstsame_s
-strisalphanumeric_s
-strisascii_s
-strisdigit_s
-strishex_s
-strislowercase_s
-strismixedcase_s
-strispassword_s
-strisuppercase_s
-strlastchar_s
-strlastdiff_s
-strlastsame_s
-strljustify_s
-strnatcmp_s
-strncat_s
-strncpy_s
-strnlen_s
-strnset_s
-strnterminate_s
-strpbrk_s
-strprefix_s
-strrchr_s
-strremovews_s
-strset_s
-strspn_s
-strstr_s
-strtok_s
-strtolowercase_s
-strtouppercase_s
-strzero_s
-swprintf_s
-swscanf_s	
-timingsafe_bcmp
-timingsafe_memcmp
-tmpfile_s
-tmpnam_s
-towctrans
-towfc_s
-unw16ifcan
-unw16ifcm
-unw16ifcmp
-unw16ifcpt
-unw16ifexc
-unwifcan
-unwifcmb
-unwifcmp
-unwifcpt
-unwifexc
-vfprintf_s
-vfscanf_s
-vfwprintf_s
-vfwscanf_s
-vprintf_s
-vscanf_s
-vsnprintf_s
-vsnwprintf_s
-vsprintf_s
-vsscanf_s.
-vswprintf_s
-vswscanf_s
-vwprintf_s
-vwscanf_s
-wcrtomb_s
-wcscat_s
-wcscmp_s
-wcscoll_s
-wcscpy_s
-wcsfc_s
-wcsicmp_s
-wcslwr_s
-wcsnatcmp_s
-wcsncat_s
-wcsncmp_s
-wcsncpy_s
-wcsnlen_s
-wcsnorm_s
-wcsnset_s
-wcsrtombs_s
-wcsset_s
-wcsstr
-wcsstr_s
-wcstok_s
-wcstombs_s
-wcsupr_s
-wctomb_s
-wmemcmp_s
-wmemcpy_s
-wmemmove_s
-wprintf_s
-wscanf_s
+- abort_handler_s
+- asctime_s
+- bsearch_s
+- ctime_s
+- fopen_s
+- fprintf_s
+- freopen_s
+- fscanf_s
+- fwprintf_s
+- fwscanf_s
+- getenv_s
+- gets_s
+- gmtime_s
+- hangul
+- ignore_handler_s
+- localtime_s
+- mbsrtowcs_s
+- mbstowcs_s
+- mem_primitives_lib
+- memccpy_s
+- memchr_s
+- memcmp16_s
+- memcmp32_s
+- memcmp_s
+- memcpy16_s
+- memcpy32_s
+- memcpy_s
+- memmove16_s
+- memmove32_s
+- memmove_s
+- memrchr_s
+- memset16_s
+- memset32_s
+- memset_s
+- memzero16_s
+- memzero32_s
+- memzero_s
+- printf_s
+- qsort_s
+- safe_compile
+- safe_config
+- safe_lib
+- safe_lib_errno
+- safe_mem_constraint
+- safe_mem_lib
+- safe_str_constraint
+- safe_str_lib
+- safe_types
+- scanf_s
+- slkm_init
+- snprintf_s
+- snwprintf_s
+- sprintf_s
+- sscanf_s
+- strcasecmp_s
+- strcasestr_s
+- strcat_s
+- strchr_s
+- strcmp_s
+- strcmpfld_s
+- strcoll_s
+- strcpy_s
+- strcpyfld_s
+- strcpyfldin_s.c
+- strcpyfldout_s.c
+- strcspn_s
+- strerror_s
+- strfirstchar_s
+- strfirstdiff_s
+- strfirstsame_s
+- strisalphanumeric_s
+- strisascii_s
+- strisdigit_s
+- strishex_s
+- strislowercase_s
+- strismixedcase_s
+- strispassword_s
+- strisuppercase_s
+- strlastchar_s
+- strlastdiff_s
+- strlastsame_s
+- strljustify_s
+- strnatcmp_s
+- strncat_s
+- strncpy_s
+- strnlen_s
+- strnset_s
+- strnterminate_s
+- strpbrk_s
+- strprefix_s
+- strrchr_s
+- strremovews_s
+- strset_s
+- strspn_s
+- strstr_s
+- strtok_s
+- strtolowercase_s
+- strtouppercase_s
+- strzero_s
+- swprintf_s
+- swscanf_s	
+- timingsafe_bcmp
+- timingsafe_memcmp
+- tmpfile_s
+- tmpnam_s
+- towctrans
+- towfc_s
+- unw16ifcan
+- unw16ifcm
+- unw16ifcmp
+- unw16ifcpt
+- unw16ifexc
+- unwifcan
+- unwifcmb
+- unwifcmp
+- unwifcpt
+- unwifexc
+- vfprintf_s
+- vfscanf_s
+- vfwprintf_s
+- vfwscanf_s
+- vprintf_s
+- vscanf_s
+- vsnprintf_s
+- vsnwprintf_s
+- vsprintf_s
+- vsscanf_s.
+- vswprintf_s
+- vswscanf_s
+- vwprintf_s
+- vwscanf_s
+- wcrtomb_s
+- wcscat_s
+- wcscmp_s
+- wcscoll_s
+- wcscpy_s
+- wcsfc_s
+- wcsicmp_s
+- wcslwr_s
+- wcsnatcmp_s
+- wcsncat_s
+- wcsncmp_s
+- wcsncpy_s
+- wcsnlen_s
+- wcsnorm_s
+- wcsnset_s
+- wcsrtombs_s
+- wcsset_s
+- wcsstr
+- wcsstr_s
+- wcstok_s
+- wcstombs_s
+- wcsupr_s
+- wctomb_s
+- wmemcmp_s
+- wmemcpy_s
+- wmemmove_s
+- wprintf_s
+- wscanf_s
 
 ## 参考サイト
 - C11の仕様－脆弱性対応に関連する機能強化点
