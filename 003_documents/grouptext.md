@@ -32,6 +32,8 @@
   - https://www.ipa.go.jp/security/awareness/vendor/programmingv2/contents/c910.html
   - このサイトの内容をまとめ、さらに関数の実際の動作を確認して発表する
 
+## セキュア関数の実装について
+- C11にはgetsとget_s
 ## 関数の対応
 - 参考サイトから抜粋
     - C11の仕様－脆弱性対応に関連する機能強化点
