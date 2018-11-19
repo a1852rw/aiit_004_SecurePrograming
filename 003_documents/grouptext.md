@@ -18,12 +18,214 @@
   - メンバーのローカル環境で作業できるところまで確認した
 
 ## C11について
-- C11とはC言語におけるセキュアライブラリである 
+- C11とはC言語の2011年度のバージョンで脆弱性への対策が行われている。
+- この中には37種類のバッファオーバーフロー対策の行われた関数が導入された。
+- これらの関数はデータの入力前に領域にデータが格納できるかどうかのチェックを行い、データが入りきらなければエラーとなる。
+- エラー時の動作の内訳は下記の通り
+    - エラーとして扱われる：29関数
+    - 切り詰めて転記して正常終了：5関数
+    - 一切書き込みせずに正常終了：1関数
+    - 読み出しの関数でありスキャン範囲に上限がある：2関数
 
 ## 参照サイト
 - 第10章 著名な脆弱性対策 C11：2011年以降のC言語仕様
   - https://www.ipa.go.jp/security/awareness/vendor/programmingv2/contents/c910.html
   - このサイトの内容をまとめ、さらに関数の実際の動作を確認して発表する
 
+## セキュア関数の実装について
+- C11にはgetsとget_s
+## 関数の対応
+- 参考サイトから抜粋
+    - C11の仕様－脆弱性対応に関連する機能強化点
+    - https://www.buildinsider.net/language/clang/02
+- C99とC11における関数の対応
+- gets関数 (W)
+    - gets_s関数
+- getenv関数 (F)
+    - getenv_s関数
+- moment関数
+    - moment_s関数
+- tmpnam関数
+    - tmpnam_s関数
+    - tmpfile_s関数
+- printf関数 (K)
+    - printf_s関数
+
+### getenv_S関数の説明
+- 担当：F
+
+### gets_s関数の説明
+- 担当：W
+
+### printf_s関数の説明
+- 担当：K
+
+
+## C11で追加された関数のリスト
+- abort_handler_s
+- asctime_s
+- bsearch_s
+- ctime_s
+- fopen_s
+- fprintf_s
+- freopen_s
+- fscanf_s
+- fwprintf_s
+- fwscanf_s
+- getenv_s
+- gets_s
+- gmtime_s
+- hangul
+- ignore_handler_s
+- localtime_s
+- mbsrtowcs_s
+- mbstowcs_s
+- mem_primitives_lib
+- memccpy_s
+- memchr_s
+- memcmp16_s
+- memcmp32_s
+- memcmp_s
+- memcpy16_s
+- memcpy32_s
+- memcpy_s
+- memmove16_s
+- memmove32_s
+- memmove_s
+- memrchr_s
+- memset16_s
+- memset32_s
+- memset_s
+- memzero16_s
+- memzero32_s
+- memzero_s
+- printf_s
+- qsort_s
+- safe_compile
+- safe_config
+- safe_lib
+- safe_lib_errno
+- safe_mem_constraint
+- safe_mem_lib
+- safe_str_constraint
+- safe_str_lib
+- safe_types
+- scanf_s
+- slkm_init
+- snprintf_s
+- snwprintf_s
+- sprintf_s
+- sscanf_s
+- strcasecmp_s
+- strcasestr_s
+- strcat_s
+- strchr_s
+- strcmp_s
+- strcmpfld_s
+- strcoll_s
+- strcpy_s
+- strcpyfld_s
+- strcpyfldin_s.c
+- strcpyfldout_s.c
+- strcspn_s
+- strerror_s
+- strfirstchar_s
+- strfirstdiff_s
+- strfirstsame_s
+- strisalphanumeric_s
+- strisascii_s
+- strisdigit_s
+- strishex_s
+- strislowercase_s
+- strismixedcase_s
+- strispassword_s
+- strisuppercase_s
+- strlastchar_s
+- strlastdiff_s
+- strlastsame_s
+- strljustify_s
+- strnatcmp_s
+- strncat_s
+- strncpy_s
+- strnlen_s
+- strnset_s
+- strnterminate_s
+- strpbrk_s
+- strprefix_s
+- strrchr_s
+- strremovews_s
+- strset_s
+- strspn_s
+- strstr_s
+- strtok_s
+- strtolowercase_s
+- strtouppercase_s
+- strzero_s
+- swprintf_s
+- swscanf_s	
+- timingsafe_bcmp
+- timingsafe_memcmp
+- tmpfile_s
+- tmpnam_s
+- towctrans
+- towfc_s
+- unw16ifcan
+- unw16ifcm
+- unw16ifcmp
+- unw16ifcpt
+- unw16ifexc
+- unwifcan
+- unwifcmb
+- unwifcmp
+- unwifcpt
+- unwifexc
+- vfprintf_s
+- vfscanf_s
+- vfwprintf_s
+- vfwscanf_s
+- vprintf_s
+- vscanf_s
+- vsnprintf_s
+- vsnwprintf_s
+- vsprintf_s
+- vsscanf_s.
+- vswprintf_s
+- vswscanf_s
+- vwprintf_s
+- vwscanf_s
+- wcrtomb_s
+- wcscat_s
+- wcscmp_s
+- wcscoll_s
+- wcscpy_s
+- wcsfc_s
+- wcsicmp_s
+- wcslwr_s
+- wcsnatcmp_s
+- wcsncat_s
+- wcsncmp_s
+- wcsncpy_s
+- wcsnlen_s
+- wcsnorm_s
+- wcsnset_s
+- wcsrtombs_s
+- wcsset_s
+- wcsstr
+- wcsstr_s
+- wcstok_s
+- wcstombs_s
+- wcsupr_s
+- wctomb_s
+- wmemcmp_s
+- wmemcpy_s
+- wmemmove_s
+- wprintf_s
+- wscanf_s
+
 ## 参考サイト
-- 
+- C11の仕様－脆弱性対応に関連する機能強化点
+    - https://www.buildinsider.net/language/clang/02
+- Overview of various libc's regarding the secure C11 extensions
+    - https://rurban.github.io/safeclib/doc/safec-3.3/d1/dae/md_doc_libc-overview.html
+- safec fork with all C11 Annex K functions 
+    - https://github.com/rurban/safeclib
