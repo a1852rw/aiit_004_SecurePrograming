@@ -8,7 +8,7 @@ int main(void)
 {
   char buf[16];
   printf("Input>");
-  gets_s(buf, sizeof(buf), stdin);
+  gets_s(buf, sizeof(buf));
   printf("Hello, %s\n", buf);
   return 0;
 }
