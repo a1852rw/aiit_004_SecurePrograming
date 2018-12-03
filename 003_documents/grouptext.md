@@ -34,10 +34,10 @@
   - gcc -std=c11 -c gets_s_example.c
   - gcc -o gets_s_example gets_s_example.o /usr/local/lib/libsafec-3.3.a
 - 注意事項
-　- コードの最上段で必ずinclude fileを指定する
+  - コードの最上段で必ずinclude fileを指定する
   - 「#include “libsafec/safe_lib.h”」「#include “libsafec/safe_str_lib.h”」
-　- これらが入力されていない場合はエラーになり実行できない
-i
+  - これらが入力されていない場合はエラーになり実行できない
+
 
 ## C11について
 - C11とはC言語の2011年度のバージョンで脆弱性への対策が行われている。
