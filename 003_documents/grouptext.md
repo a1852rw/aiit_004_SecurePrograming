@@ -29,6 +29,16 @@
   - make
   - sudo make install
 
+### コードのコンパイル手順と注意事項
+- コンパイル手順(gets_s_example.cをコンパイルする場合)
+  - gcc -std=c11 -c gets_s_example.c
+  - gcc -o gets_s_example gets_s_example.o /usr/local/lib/libsafec-3.3.a
+- 注意事項
+　- コードの最上段で必ずinclude fileを指定する
+  - 「#include “libsafec/safe_lib.h”」「#include “libsafec/safe_str_lib.h”」
+　- これらが入力されていない場合はエラーになり実行できない
+i
+
 ## C11について
 - C11とはC言語の2011年度のバージョンで脆弱性への対策が行われている。
 - この中には37種類のバッファオーバーフロー対策の行われた関数が導入された。
@@ -41,6 +51,7 @@
     - 読み出しの関数でありスキャン範囲に上限がある：2関数
 - C11はまだ規格化されて間もないため処理系によるサポートはこれから進んでいくものと思われる。
 - 今回紹介する機能の多くはC11仕様のAnnex Kで定められているものであり、これらは実装がオプション扱いとなっている。
+
 
 ## ライブラリの紹介
 - ライブラリ名：Safe C Library
@@ -58,18 +69,19 @@
     - C11の仕様－脆弱性対応に関連する機能強化点
     - https://www.buildinsider.net/language/clang/02
 - C99とC11における関数の対応
-- gets関数 (W)
+- gets関数 (Wが担当)
     - gets_s関数
-- getenv関数 (F)
+- getenv関数 (Fが担当)
     - getenv_s関数
 - moment関数
     - moment_s関数
 - tmpnam関数
     - tmpnam_s関数
     - tmpfile_s関数
-- printf関数 (K)
+- printf関数 (Kが担当)
     - printf_s関数
 
+## サンプルコードの実行と結果 
 ### getenv_S関数の説明
 - 担当：F
 
