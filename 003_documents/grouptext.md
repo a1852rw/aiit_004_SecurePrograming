@@ -81,15 +81,31 @@ i
 - printf関数 (Kが担当)
     - printf_s関数
 
-## サンプルコードの実行と結果 
-### getenv_S関数の説明
-- 担当：F
+## 各関数の説明(担当メンバー毎) 
+### getenv_S関数
+#### 確認の概要
+- 担当：メンバーF
+- サンプルコード
+  - getenv_example.c
+  - getenv_s_example.c
 
-### gets_s関数の説明
-- 担当：W
+
+### gets_s関数
+#### 確認の概要
+- 担当：メンバーW
+- サンプルコード
+  - sample_001_gets.c
+  - sample_002_gets_s.c
+- サンプル文字列
+  - sample_003.txt
+  - gets関数に読み込ませる文字列を記載している
 
 ### printf_s関数の説明
-- 担当：K
+#### 確認の概要
+- 担当：メンバーK
+- サンプルコード
+  - test-1.c
+  - test-2.c
 
 
 ## C11で追加された関数のリスト
